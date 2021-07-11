@@ -1,0 +1,42 @@
+html {
+  height: 101%;
+}
+
+.emp-date {
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.emp-co-group{
+  margin-bottom: 15px;
+  max-width: 99%;
+}
+
+.emp-co-title {
+  margin-bottom: -9px;
+  cursor: pointer;
+}
+
+.emp-task-group .list-group-item{
+  border-width: 0 0 0;
+}
+
+.emp-task {
+  text-indent: -1.2em;
+  margin-left: 1.1em;
+  margin-bottom: 0;
+}
+
+.bullet  {
+  font-size: 9px;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  h5 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: .9rem;
+  }
+}

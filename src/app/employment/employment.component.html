@@ -1,0 +1,303 @@
+<h3 class="display-4">Employment History</h3>
+
+<div class="container-fluid">
+  <div class="row emp-co-group">
+    <div class="row">
+      <div class="col-lg-6 col-md-5 emp-co-title" (click)="ukg.hidden = !ukg.hidden">
+        <h5>
+          <fa-icon [icon]="getArrowIcon(ukg)"></fa-icon>
+          Ultimate Software/Ultimate Kronos Group
+        </h5>
+      </div>
+      <div class="col-md">
+        <p class="font-weight-light text-muted emp-date">Feb 2020 - Present</p>
+      </div>
+    </div>
+    <div class="container emp-task-group" #ukg id="ukg">
+      <div class="row ms-3">
+        <div class="col">
+          <p class="font-weight-light text-muted mb-0">Lead Software Engineer</p>
+        </div>
+      </div>
+      <div class="row ms-3">
+        <div class="col-lg-7 col-md-5">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Develop Identity applications for authentication through OpenAm. Applications are built using Java, Go,
+                and Angular.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Develop traffic emulator with custom circuit breaker implementation to validate real-time loads on new
+                environments.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Migrate the concourse CI pipeline orchestration engine from PCF to stand alone VM using Terraform,
+                Ansible
+                and Golang.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Create and deploy Visibility and Team enablement tools to manage deployments and builds using Angular,
+                Golang, Mongo and Redis.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Configure application deployment pipelines.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Collaborate in architectural design reviews and planning for upcoming features.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Help setup different internal teams to enable the testing of major upcoming versions.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Perform regular code reviews within the team to ensure high coding standards.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row emp-co-group">
+    <div class="row">
+      <div class="col-lg-6 col-md-5 emp-co-title" (click)="ncl.hidden = !ncl.hidden">
+        <h5>
+          <fa-icon [icon]="getArrowIcon(ncl)"></fa-icon>
+          Norwegian Cruiseline Holdings Ltd.
+        </h5>
+      </div>
+      <div class="col-md">
+        <p class="font-weight-light text-muted emp-date">Sep 2017 - Jan 2020</p>
+      </div>
+    </div>
+    <div class="container emp-task-group" [hidden]="true" #ncl id="ncl">
+      <div class="row ms-3">
+        <div class="col">
+          <p class="font-weight-light text-muted mb-0">Lead Application Developer - Architectural Lead</p>
+        </div>
+      </div>
+      <div class="row ms-3">
+        <div class="col-lg-7 col-md-5">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Lead a team of 3 developers and 1 QA in an agile environment. Establishing coding standards and best
+                practices for the team.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Developing Scala applications/Microservices for the web. Applications are built using Scala with Play
+                Framework, Akka, and Angular.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Integrating different layers of services to export/import data to all the NCL fleet.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Developing Kafka pipelines to handle web events.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                In charge of architectural designs for new applications/services.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Creating and maintaining Ansible playbooks for the provisioning/deployment of applications and services.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Troubleshooting and debugging level 2 issues within the applications.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row emp-co-group">
+    <div class="row">
+      <div class="col-lg-6 col-md-5 emp-co-title" (click)="tf.hidden = !tf.hidden">
+        <h5>
+          <fa-icon [icon]="getArrowIcon(tf)"></fa-icon>
+          Tracfone Wireless
+        </h5>
+      </div>
+      <div class="col-md">
+        <p class="font-weight-light text-muted emp-date">May 2015 - Sep 2017</p>
+      </div>
+    </div>
+    <div class="container emp-task-group" [hidden]="true" #tf id="tf">
+      <div class="row ms-3">
+        <div class="col">
+          <p class="font-weight-light text-muted mb-0">Associate Core Applications Support - Jr Java Admin</p>
+        </div>
+      </div>
+      <div class="row ms-3">
+        <div class="col-lg-7 col-md-5">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Deploying JAVA/J2EE based applications to a variety of Application servers, including
+                BEA Weblogic, IBM Portal/Commerce, and Oracle SOA.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Develop GUI tools to port functionality from UNIX based environments to a web-based interface,
+                implementing Java, JavaScript, AJAX, HTML and CSS. This increased productivity by providing a one-pane
+                view of the systems with embedded functions to control each process/server.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Develop monitoring tools to provide live health checks for a three-tier architecture architecture. These
+                tools are distributed to different departments to enhance the monitoring across environments.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Developing shell scripts for UNIX and SOLARIS.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Configuring Java environments, and JMS queues to provide
+                communication between TracFone servers and carrier Java APIs.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Automating code deployments using Anthill Pro, CA IT-PAM, and CA Autosys.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Deploying Apache Tomcat and Oracle Weblogic servers.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Monitoring production and test environments which encompass technologies as IBM Websphere Portal, Oracle
+                Weblogic, Oracle SOA and Service Bus.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Troubleshooting environment issues with tools such as Splunk, creating system alerts and
+                dashboards. This was complemented with tools such as Introscope and Alertsite.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Mentored all the junior members of the team.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row emp-co-group">
+    <div class="row">
+      <div class="col-lg-6 col-md-5 emp-co-title" (click)="dcfcu.hidden = !dcfcu.hidden">
+        <h5>
+          <fa-icon [icon]="getArrowIcon(dcfcu)"></fa-icon>
+          Dade County Federal CU
+        </h5>
+      </div>
+      <div class="col-md">
+        <p class="font-weight-light text-muted emp-date">Feb 2008 - May 2015</p>
+      </div>
+    </div>
+    <div class="container emp-task-group" [hidden]="true" #dcfcu id="dcfcu">
+      <div class="row ms-3">
+        <div class="col">
+          <p class="font-weight-light text-muted mb-0">Project Coordinator</p>
+        </div>
+      </div>
+      <div class="row ms-3">
+        <div class="col-lg-7 col-md-5">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Responsible for overseeing different projects within the credit union. Projects range from ATM
+                installations to new branch set-ups, this includes researching and maintaining system controls.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Plan and evaluate the completion of project objectives.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Implement productivity standards when allocating resources.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                In charge of testing new product implementations.
+              </p>
+            </li>
+            <li class="list-group-item">
+              <p class="emp-task">
+                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                Maintain constant contact with vendors and other project teams.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

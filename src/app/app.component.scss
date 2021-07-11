@@ -1,0 +1,85 @@
+.side-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  background-image: url("~src/assets/img/dark_circles.png");
+  background-repeat: repeat;
+}
+
+.fa {
+  display: inline-block;
+}
+
+.img-thumbnail{
+  padding: 0.07rem;
+}
+
+.content {
+  margin-left: 18rem;
+  margin-top: 20px;
+  transition: all 0.4s;
+}
+
+#sidebar.hidden {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 18px;
+}
+
+.menu-toggle{
+  position: absolute;
+  margin-left: 270px;
+  margin-top: 0;
+  font-size: 20px;
+  color: #212529 !important;
+}
+
+.menu-toggle.active{
+  margin-left: 256px;
+  margin-top: 0;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.hidden {
+    margin-left: 0;
+    margin-bottom: -1000px;
+    height: 100%;
+  }
+  #content {
+    width: 100%;
+    margin: 10px;
+    margin-top: 15px;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+
+  .menu-toggle{
+    margin-left: 256px;
+    margin-top: 0;
+    color: white !important;
+    transform: rotate(180deg);
+    position: fixed;
+  }
+
+  .menu-toggle.active{
+    margin-left: 270px;
+    margin-top: 0;
+    color: #212529 !important;
+    position: fixed;
+  }
+}
+
