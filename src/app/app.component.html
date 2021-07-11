@@ -1,0 +1,52 @@
+<div [ngClass]="{'hidden': !menuActive}" class="side-nav" #sidebar id="sidebar">
+  <fa-icon [ngClass]="{'active': menuActive}" [icon]="getMenuState(sidebar)"  class="menu-toggle text-end"
+           (click)="menuActive = !menuActive"></fa-icon>
+  <div class="py-4 px-3 mb-4 bg-dark">
+    <div class="media d-flex align-items-center"><img src="assets/img/face.png" alt="..." width="65"
+                                                      class="me-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0 text-light">Raul Tobo</h4>
+        <p class="font-weight-light text-white-50 mb-0">Software Engineer</p>
+        <a href="https://www.linkedin.com/in/rtobo/" target="_blank" class="text-white-50">
+          <i class="bi bi-linkedin text-light"></i>
+        </a>
+        <a href="https://github.com/rftl" target="_blank" class="text-white-50 ms-2">
+          <i class="bi bi-github text-light"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav flex-column ms-2 mb-0">
+    <li class="nav-item">
+      <a [routerLink]="['/home']" class="nav-link text-light font-italic" routerLinkActive="bg-dark">
+        <fa-icon [icon]="faHome" class="fa fa-fw me-2"></fa-icon>
+        Home
+      </a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/skills']" class="nav-link text-light font-italic" routerLinkActive="bg-dark">
+        <fa-icon [icon]="faCode" class="fa fa-fw me-2"></fa-icon>
+        Skills
+      </a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/employment']" class="nav-link text-light font-italic" routerLinkActive="bg-dark">
+        <fa-icon [icon]="faEmp" class="fa fa-fw me-2"></fa-icon>
+        Employment
+      </a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/resume']" class="nav-link text-light font-italic" routerLinkActive="bg-dark">
+        <fa-icon [icon]="faFile" class="fa fa-fw me-2"></fa-icon>
+        Resume
+      </a>
+    </li>
+  </ul>
+</div>
+<div [ngClass]="{'active': !menuActive}" class="content" #content id="content">
+  <div class="col-12" [@routerTransition]="getState(o)">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>
+</div>
+
