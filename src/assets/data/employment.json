@@ -1,0 +1,67 @@
+[
+  {
+    "code": "ukg",
+    "company": "Ultimate Software/Ultimate Kronos Group",
+    "start": "Feb 2020",
+    "end": "Present",
+    "title": "Lead Software Engineer",
+    "tasks": [
+      "Develop Identity applications which implement Oauth2 authentication through OpenAm. Applications are built using Java, Go, and Angular.",
+      "Collaborate in architectural designs and planning for upcoming features.",
+      "Create and deploy Visibility and Team enablement tools to manage deployments and builds using Angular, Golang, Mongo and Redis.",
+      "Develop traffic emulator with custom circuit breaker implementation to validate real-time loads on new environments.",
+      "Migrate the concourse CI pipeline orchestration engine from PCF to stand alone VM using Terraform, Ansible and Golang.",
+      "Configure application deployment pipelines.",
+      "Help setup different internal teams to enable integration with our application and assist with the testing of major upcoming versions.",
+      "Perform regular code reviews within the team to ensure high coding standards."
+    ]
+  },
+  {
+    "code": "ncl",
+    "company": "Norwegian Cruiseline Holdings Ltd.",
+    "start": "Sep 2017",
+    "end": "Jan 2020",
+    "title": "Lead Application Developer - Architectural Lead",
+    "tasks": [
+      "Lead a team of 3 developers and 1 QA in an agile environment. Establishing coding standards and best practices for the team.",
+      "Develop Scala applications/Microservices for the web. Applications are built using Scala with Play Framework, Akka, and Angular.",
+      "Develop and integrate different layers of services to export/import data to all the NCL fleet.",
+      "Develop Kafka pipelines to handle web events.",
+      "In charge of architectural designs for new applications/services.",
+      "Create and maintain Ansible playbooks for the provisioning/deployment of applications and services.",
+      "Troubleshoot and debugging level 2 issues within the applications."
+    ]
+  },
+  {
+    "code": "tf",
+    "company": "Tracfone Wireless",
+    "start": "May 2015",
+    "end": "Sep 2017",
+    "title": "Associate Core Applications Support - Jr Java Admin",
+    "tasks": [
+      "Deploy JAVA/J2EE based applications to a variety of Application servers, including BEA Weblogic, IBM Portal/Commerce, and Oracle SOA.",
+      "Develop GUI tools to port functionality from UNIX based environments to a web-based interface, implementing Java, JavaScript, AJAX, HTML and CSS. This increased productivity by providing a one-pane view of the systems with embedded functions to control each process/server.",
+      "Develop monitoring tools to provide live health checks for a three-tier architecture system. These tools are distributed to different departments to enhance the monitoring across environments.",
+      "Develop shell scripts for server monitoring, control, and automation.",
+      "Configure Java environments, and JMS queues to provide communication between TracFone servers and carrier Java APIs.",
+      "Automate code deployments using Anthill Pro, CA IT-PAM, and CA Autosys.",
+      "Monitoring production and test environments which encompass technologies as IBM Websphere Portal, Oracle Weblogic, Oracle SOA and Service Bus.",
+      "Troubleshoot environment issues with tools such as Splunk, creating system alerts and dashboards. This was complemented with tools such as Introscope and Alertsite.",
+      "Mentor all the junior members of the team."
+    ]
+  },
+  {
+    "code": "dcfcu",
+    "company": "Dade County Federal CU",
+    "start": "Feb 2008",
+    "end": "May 2015",
+    "title": "Project Coordinator",
+    "tasks": [
+      "Responsible for overseeing different projects within the credit union. Projects range from ATM installations to new branch set-ups, this includes researching and maintaining system controls.",
+      "Plan and evaluate the completion of project objectives.",
+      "Implement productivity standards when allocating resources.",
+      "In charge of testing new product implementations.",
+      "Maintain constant contact with vendors and other project teams."
+    ]
+  }
+]

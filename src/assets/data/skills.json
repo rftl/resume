@@ -1,0 +1,14 @@
+[
+  {
+    "category": "Languages",
+    "skills":  ["Java", "Scala", "Go", "Python", "JavaScript", "SQL"]
+  },
+  {
+    "category": "Frameworks/Platforms",
+    "skills": ["Angular", "Ansible", "Akka", "Kafka", "OpenAm", "Play Framework", "Slick"]
+  },
+  {
+    "category": "Other",
+    "skills": ["Project Management", "HTML/CSS", "Git", "Linux/UNIX/Mac/Windows", "Fluent in English and Spanish"]
+  }
+]

@@ -1,6 +1,8 @@
 import {Component, OnInit, Renderer2, ViewChild, AfterViewInit, ElementRef, ChangeDetectorRef} from '@angular/core';
 import {faCaretDown, faCaretRight, faTerminal} from "@fortawesome/free-solid-svg-icons";
 import {IconProp} from "@fortawesome/fontawesome-svg-core";
+import EmploymentJson from "../../assets/data/employment.json"
+import {Employment} from "../models/data.models";
 
 @Component({
   selector: 'app-employment',
@@ -9,30 +11,30 @@ import {IconProp} from "@fortawesome/fontawesome-svg-core";
 })
 export class EmploymentComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('ncl')
-  ncl!: ElementRef;
-  @ViewChild('tf')
-  tf!: ElementRef;
-  @ViewChild('dcfcu')
-  dcfcu!: ElementRef;
-
   bullet = faTerminal
+
+  employmentData: Employment[]
 
   constructor(private cdr: ChangeDetectorRef) {
   }
 
   ngOnInit(): void {
+    this.employmentData = EmploymentJson
   }
 
   ngAfterViewInit() {
     this.cdr.detectChanges()
   }
 
-  getArrowIcon(cat: HTMLDivElement): IconProp {
-    if (cat.hidden) {
-      return faCaretRight;
+  getArrowIcon(code: string): IconProp {
+    return document.getElementById(code)?.hidden ? faCaretRight : faCaretDown;
+  }
+
+  toggleContent(code: string) {
+    const element: null | HTMLElement = document.getElementById(code);
+    if (element) {
+      element.hidden = !element.hidden;
     }
-    return faCaretDown;
   }
 
 }
