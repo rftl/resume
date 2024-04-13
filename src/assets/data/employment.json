@@ -1,12 +1,32 @@
 [
   {
+    "code": "alg",
+    "company": "Allegion",
+    "start": "Jun 2023",
+    "end": "Present",
+    "title": "Senior Software Engineer",
+    "tasks": [
+      "Design, develop, and maintain software solutions for new and existing products.",
+      "Demonstrate best practices in engineering using Node.js, Typescript and JavaScript.",
+      "Programmatically manage, observe, and monitor AWS infrastructure.",
+      "Work closely with product management to understand requirements and translate them to elegant implementation.",
+      "Communicate, collaborate, and work effectively with domestic and global teams software teams.",
+      "Write outstanding code demonstrating best practices in test driven development (TDD) using tools such as Jest.",
+      "Perform thorough and thoughtful code reviews to mentor and grow teammates.",
+      "Help drive efficiency and predictability for the team's productivity and velocity.",
+      "Combine scalable, event-based architecture with serverless technologies to create cost-sensitive solutions for IoT use-cases.",
+      "Help to promote diversity in STEM fields.",
+      "Be an advocate and mentor of best practices (TDD, application monitoring, development techniques, testing, security, agile methodologies, etc.)"
+    ]
+  },
+  {
     "code": "ukg",
     "company": "Ultimate Software/Ultimate Kronos Group",
     "start": "Feb 2020",
-    "end": "Present",
-    "title": "Lead Software Engineer",
+    "end": "Jun 2023",
+    "title": "Principal Software Engineer",
     "tasks": [
-      "Develop Identity applications which implement Oauth2 authentication through OpenAm. Applications are built using Java, Go, and Angular.",
+      "Develop Identity applications which implement Oauth2/OIDC/SAML authentication through OpenAm. Applications are built using Java, Go, and Angular.",
       "Collaborate in architectural designs and planning for upcoming features.",
       "Create and deploy Visibility and Team enablement tools to manage deployments and builds using Angular, Golang, Mongo and Redis.",
       "Develop traffic emulator with custom circuit breaker implementation to validate real-time loads on new environments.",
