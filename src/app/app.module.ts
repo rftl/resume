@@ -7,9 +7,9 @@ import {HomeComponent} from './home/home.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ResumeComponent} from './resume/resume.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
-import { SkillsComponent } from './skills/skills.component';
-import { EmploymentComponent } from './employment/employment.component';
-import { EducationComponent } from './education/education.component';
+import {SkillsComponent} from './skills/skills.component';
+import {EmploymentComponent} from './employment/employment.component';
+import {EducationComponent} from './education/education.component';
 import {PdfJsViewerModule} from "ng2-pdfjs-viewer";
 
 @NgModule({
