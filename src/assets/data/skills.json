@@ -14,19 +14,22 @@
   {
     "category": "Frameworks/Platforms",
     "skills": [
+      "AWS",
       "Node.js",
       "Angular",
       "React",
+      "Next.js",
       "Material UI",
       "Ansible",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
       "Akka",
       "Kafka",
       "Auth0",
       "OpenAm",
       "Play Framework",
-      "Slick",
-      "Kubernetes",
-      "AWS"
+      "Slick"
     ]
   },
   {

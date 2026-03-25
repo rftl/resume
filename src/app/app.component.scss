@@ -9,6 +9,22 @@
   transition: all 0.4s;
   background-image: url("/assets/img/dark_circles.png");
   background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-toggle-btn {
+  margin-top: auto;
+
+  .form-check-input:checked {
+    background-color: rgb(108, 117, 125);
+    border-color: rgb(108, 117, 125);
+  }
+
+  .form-check-input:focus {
+    border-color: rgb(108, 117, 125);
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25);
+  }
 }
 
 .fa {
@@ -22,7 +38,7 @@
 .content {
   margin-left: 18rem;
   margin-top: 20px;
-  transition: all 0.4s;
+  transition: margin 0.4s;
 }
 
 #sidebar.hidden {
@@ -36,14 +52,14 @@
 
 .menu-toggle{
   position: absolute;
-  margin-left: 270px;
+  margin-left: 268px;
   margin-top: 0;
   font-size: 20px;
   color: #212529 !important;
 }
 
 .menu-toggle.active{
-  margin-left: 256px;
+  margin-left: 252px;
   margin-top: 0;
   color: white !important;
 }

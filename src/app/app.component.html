@@ -1,5 +1,5 @@
 <div [class.hidden]="!menuActive" class="side-nav" #sidebar id="sidebar">
-  <fa-icon [class.active]="menuActive" [icon]="getMenuState()"  class="menu-toggle text-end"
+  <fa-icon [class.active]="menuActive" [icon]="getMenuState()" class="menu-toggle text-end"
            (click)="menuActive = !menuActive"></fa-icon>
   <div class="py-4 px-3 mb-4 bg-dark">
     <div class="media d-flex align-items-center"><img ngSrc="assets/img/face.png" alt="..." width="65"
@@ -43,10 +43,18 @@
       </a>
     </li>
   </ul>
+
+  <div class="theme-toggle-btn px-3 pb-3 d-flex align-items-center justify-content-center gap-2">
+    <fa-icon [icon]="faSun" class="text-light"></fa-icon>
+    <div class="form-check form-switch mb-0">
+      <input class="form-check-input" type="checkbox" role="switch"
+             [checked]="themeService.isDark()" (change)="themeService.toggle()">
+    </div>
+    <fa-icon [icon]="faMoon" class="text-light"></fa-icon>
+  </div>
 </div>
 <div [class.active]="!menuActive" class="content" #content id="content">
   <div class="col-12 route-content">
     <router-outlet></router-outlet>
   </div>
 </div>
-

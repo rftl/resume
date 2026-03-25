@@ -1,4 +1,9 @@
-.pdf-view{
-  height: 700px;
+.pdf-view {
+  height: calc(100vh - 120px);
   min-height: 600px;
+
+  ng2-pdfjs-viewer {
+    height: 100%;
+    display: block;
+  }
 }
