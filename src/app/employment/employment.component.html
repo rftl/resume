@@ -1,36 +1,40 @@
 <h3 class="display-4">Employment History</h3>
 
 <div class="container-fluid">
-  <div *ngFor="let employment of employmentData; first as current" class="row emp-co-group">
-    <div class="row">
-      <div class="col-lg-6 col-md-5 emp-co-title" (click)="toggleContent(employment.code)">
-        <h5>
-          <fa-icon [icon]="getArrowIcon(employment.code)"></fa-icon>
-          {{employment.company}}
-        </h5>
-      </div>
-      <div class="col-md">
-        <p class="font-weight-light text-muted emp-date">{{employment.start}} - {{employment.end}}</p>
-      </div>
-    </div>
-    <div class="container emp-task-group" [hidden]="!current" id="{{employment.code}}">
-      <div class="row ms-3">
-        <div class="col">
-          <p class="font-weight-light text-muted mb-0">{{employment.title}}</p>
+  @for (employment of employmentData; track employment.code) {
+    <div class="row emp-co-group">
+      <div class="row">
+        <div class="col-lg-6 col-md-5 emp-co-title" (click)="toggleContent(employment.code)">
+          <h5>
+            <fa-icon [icon]="getArrowIcon(employment.code)"></fa-icon>
+            {{employment.company}}
+          </h5>
+        </div>
+        <div class="col-md">
+          <p class="font-weight-light text-muted emp-date">{{employment.start}} - {{employment.end}}</p>
         </div>
       </div>
-      <div class="row ms-3">
-        <div class="col-lg-7 col-md-5">
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item" *ngFor="let task of employment.tasks">
-              <p class="emp-task">
-                <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
-                {{task}}
-              </p>
-            </li>
-          </ul>
+      <div class="container emp-task-group" [hidden]="!isExpanded(employment.code)">
+        <div class="row ms-3">
+          <div class="col">
+            <p class="font-weight-light text-muted mb-0">{{employment.title}}</p>
+          </div>
+        </div>
+        <div class="row ms-3">
+          <div class="col-lg-7 col-md-5">
+            <ul class="list-group list-group-flush">
+              @for (task of employment.tasks; track $index) {
+                <li class="list-group-item">
+                  <p class="emp-task">
+                    <fa-icon [icon]="bullet" class="bullet text-muted"></fa-icon>
+                    {{task}}
+                  </p>
+                </li>
+              }
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  }
 </div>

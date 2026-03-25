@@ -1,20 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import {Component} from '@angular/core';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import SkillSet from '../../assets/data/skills.json';
-import {Skill} from "../models/data.models";
+import {Skill} from '../models/data.models';
 
 @Component({
+  standalone: true,
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
+  imports: [FontAwesomeModule]
 })
-export class SkillsComponent implements OnInit {
-
-  skillSet: Skill[];
-
-  constructor() { }
-
-  ngOnInit(): void {
-    this.skillSet = SkillSet;
-  }
-
+export class SkillsComponent {
+  skillSet: Skill[] = SkillSet;
 }

@@ -1,12 +1,20 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import {bootstrapApplication} from '@angular/platform-browser';
+import {provideRouter, withViewTransitions} from '@angular/router';
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import {AppComponent} from './app/app.component';
+import {HomeComponent} from './app/home/home.component';
+import {ResumeComponent} from './app/resume/resume.component';
+import {SkillsComponent} from './app/skills/skills.component';
+import {EmploymentComponent} from './app/employment/employment.component';
 
-if (environment.production) {
-  enableProdMode();
-}
-
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideRouter([
+      {path: 'home', component: HomeComponent},
+      {path: 'skills', component: SkillsComponent},
+      {path: 'employment', component: EmploymentComponent},
+      {path: 'resume', component: ResumeComponent},
+      {path: '', redirectTo: 'home', pathMatch: 'full'}
+    ], withViewTransitions())
+  ]
+}).catch((err: unknown) => console.error(err));

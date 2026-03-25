@@ -2,11 +2,15 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-3 col-md-2" *ngFor="let skillGroup of skillSet">
-      <h5>{{skillGroup.category}}</h5>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item" *ngFor="let skill of skillGroup.skills">{{skill}}</li>
-      </ul>
-    </div>
+    @for (skillGroup of skillSet; track skillGroup.category) {
+      <div class="col-lg-3 col-md-2">
+        <h5>{{skillGroup.category}}</h5>
+        <ul class="list-group list-group-flush">
+          @for (skill of skillGroup.skills; track $index) {
+            <li class="list-group-item">{{skill}}</li>
+          }
+        </ul>
+      </div>
+    }
   </div>
 </div>

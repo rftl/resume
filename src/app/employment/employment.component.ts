@@ -1,40 +1,42 @@
-import {Component, OnInit, Renderer2, ViewChild, AfterViewInit, ElementRef, ChangeDetectorRef} from '@angular/core';
-import {faCaretDown, faCaretRight, faTerminal} from "@fortawesome/free-solid-svg-icons";
-import {IconProp} from "@fortawesome/fontawesome-svg-core";
-import EmploymentJson from "../../assets/data/employment.json"
-import {Employment} from "../models/data.models";
+import {Component, OnInit} from '@angular/core';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {faCaretDown, faCaretRight, faTerminal} from '@fortawesome/free-solid-svg-icons';
+import {IconProp} from '@fortawesome/fontawesome-svg-core';
+import EmploymentJson from '../../assets/data/employment.json';
+import {Employment} from '../models/data.models';
 
 @Component({
+  standalone: true,
   selector: 'app-employment',
   templateUrl: './employment.component.html',
-  styleUrls: ['./employment.component.scss']
+  styleUrls: ['./employment.component.scss'],
+  imports: [FontAwesomeModule]
 })
-export class EmploymentComponent implements OnInit, AfterViewInit {
-
-  bullet = faTerminal
-
-  employmentData: Employment[]
-
-  constructor(private cdr: ChangeDetectorRef) {
-  }
+export class EmploymentComponent implements OnInit {
+  bullet = faTerminal;
+  employmentData: Employment[] = [];
+  private expandedItems = new Set<string>();
 
   ngOnInit(): void {
-    this.employmentData = EmploymentJson
-  }
-
-  ngAfterViewInit() {
-    this.cdr.detectChanges()
-  }
-
-  getArrowIcon(code: string): IconProp {
-    return document.getElementById(code)?.hidden ? faCaretRight : faCaretDown;
-  }
-
-  toggleContent(code: string) {
-    const element: null | HTMLElement = document.getElementById(code);
-    if (element) {
-      element.hidden = !element.hidden;
+    this.employmentData = EmploymentJson;
+    if (this.employmentData.length > 0) {
+      this.expandedItems.add(this.employmentData[0].code);
     }
   }
 
+  isExpanded(code: string): boolean {
+    return this.expandedItems.has(code);
+  }
+
+  getArrowIcon(code: string): IconProp {
+    return this.expandedItems.has(code) ? faCaretDown : faCaretRight;
+  }
+
+  toggleContent(code: string): void {
+    if (this.expandedItems.has(code)) {
+      this.expandedItems.delete(code);
+    } else {
+      this.expandedItems.add(code);
+    }
+  }
 }

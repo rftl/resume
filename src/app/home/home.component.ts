@@ -1,21 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {faBriefcase, faMapMarkerAlt, faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+import {Component} from '@angular/core';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import {faBriefcase, faMapMarkerAlt, faPaperPlane} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
+  standalone: true,
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  imports: [FontAwesomeModule]
 })
-export class HomeComponent implements OnInit {
-
-  faMap = faMapMarkerAlt
-  faMail = faPaperPlane
-  faWork = faBriefcase
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-  }
-
+export class HomeComponent {
+  faMap = faMapMarkerAlt;
+  faMail = faPaperPlane;
+  faWork = faBriefcase;
 }

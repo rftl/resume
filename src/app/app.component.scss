@@ -7,7 +7,7 @@
   left: 0;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
-  background-image: url("~src/assets/img/dark_circles.png");
+  background-image: url("/assets/img/dark_circles.png");
   background-repeat: repeat;
 }
 
@@ -59,8 +59,7 @@
   }
   #content {
     width: 100%;
-    margin: 10px;
-    margin-top: 15px;
+    margin: 15px 10px 10px;
   }
   #content.active {
     margin-left: 17rem;

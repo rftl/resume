@@ -1,6 +1,5 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { ResumeComponent } from './resume.component';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {ResumeComponent} from './resume.component';
 
 describe('ResumeComponent', () => {
   let component: ResumeComponent;
@@ -8,12 +7,9 @@ describe('ResumeComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ResumeComponent ]
-    })
-    .compileComponents();
-  });
+      imports: [ResumeComponent]
+    }).compileComponents();
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ResumeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -21,5 +17,9 @@ describe('ResumeComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have resumeSrc set', () => {
+    expect(component.resumeSrc).toBe('RaulTobo_Resume.pdf');
   });
 });
