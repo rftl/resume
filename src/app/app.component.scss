@@ -27,9 +27,11 @@
 }
 
 .sidebar-avatar {
+  display: block;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.15);
   flex-shrink: 0;
+  align-self: center;
 }
 
 .sidebar-identity {
