@@ -3,43 +3,65 @@
     "category": "Languages",
     "skills": [
       "Java",
-      "Scala",
-      "Go",
-      "Python",
       "TypeScript/JavaScript",
+      "Python",
+      "Go",
+      "Scala"
+    ]
+  },
+  {
+    "category": "Frontend",
+    "skills": [
+      "Angular",
+      "HTML/CSS",
+      "Material UI",
+      "Next.js",
+      "React"
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills": [
+      "Akka",
       "GraphQL",
+      "Node.js",
+      "Play Framework",
+      "REST",
+      "Spring Boot"
+    ]
+  },
+  {
+    "category": "Cloud & Infrastructure",
+    "skills": [
+      "Ansible",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform"
+    ]
+  },
+  {
+    "category": "Data",
+    "skills": [
+      "Kafka",
+      "Slick",
       "SQL/NoSQL"
     ]
   },
   {
-    "category": "Frameworks/Platforms",
+    "category": "Security & Identity",
     "skills": [
-      "AWS",
-      "Node.js",
-      "Angular",
-      "React",
-      "Next.js",
-      "Material UI",
-      "Ansible",
-      "Docker",
-      "Kubernetes",
-      "Terraform",
-      "Akka",
-      "Kafka",
       "Auth0",
-      "OpenAm",
-      "Play Framework",
-      "Slick"
+      "OpenAm"
     ]
   },
   {
-    "category": "Other",
+    "category": "Tools & Other",
     "skills": [
-      "Project Management",
-      "HTML/CSS",
+      "Fluent in English and Spanish",
       "Git",
       "Linux/UNIX/Mac/Windows",
-      "Fluent in English and Spanish"
+      "Project Management"
     ]
   }
 ]

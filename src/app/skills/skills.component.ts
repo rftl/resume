@@ -11,5 +11,12 @@ import {Skill} from '../models/data.models';
   imports: [FontAwesomeModule]
 })
 export class SkillsComponent {
-  skillSet: Skill[] = SkillSet;
+  private static readonly unsortedCategories = new Set(['Languages', 'Tools & Other']);
+
+  skillSet: Skill[] = SkillSet.map(group => ({
+    ...group,
+    skills: SkillsComponent.unsortedCategories.has(group.category)
+      ? group.skills
+      : [...group.skills].sort((a, b) => a.localeCompare(b))
+  }));
 }

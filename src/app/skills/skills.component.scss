@@ -1,3 +1,28 @@
-.list-group-flush>.list-group-item:last-child{
-  margin-bottom: 15px;
+.skill-category-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--accent-border);
+}
+
+.skill-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-pill {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+  font-size: 0.83rem;
+  font-weight: 500;
+  color: #444;
+  letter-spacing: 0.01em;
 }

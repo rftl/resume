@@ -1,27 +1,48 @@
-<h3 class="display-4">Home</h3>
-
-<div class="container-fluid">
-
-  <div class="row">
-    <h4 class="mb-3">About me...</h4>
-    <p class="lead mb-2">I am an enthusiastic Computer Science professional with over eight years in software development and over five years of project management experience.</p>
-    <br>
-    <p class="lead mb-0">Currently working as a Senior Software Engineer, utilizing Node.js with TypeScript and GraphQL in a serverless AWS environment</p>
-  </div>
-
-  <br><br>
-  <div class="row">
-    <div class="col-lg-4 col-md-2 lead mb-0">
-      <fa-icon [icon]="faMail" class="me-2"></fa-icon> <b>Email:</b> r.tobo&#64;me.com
-    </div>
-    <div class="col-lg-4 col-md-2 lead mb-0">
-      <fa-icon [icon]="faMap" class="me-2"></fa-icon> <b>Location:</b> Denver, CO, USA
-    </div>
-    <div class="col-lg-4 col-md-2 lead mb-0">
-      <fa-icon [icon]="faWork" class="me-2"></fa-icon> <b>Freelance:</b> Currently Unavailable
-    </div>
-  </div>
-
+<div class="hero-banner">
+  <h1 class="hero-name">Raul Tobo</h1>
+  <p class="hero-subtitle">Software Engineer</p>
+  <p class="hero-tagline">Java &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Go &nbsp;·&nbsp; Python &nbsp;·&nbsp; AWS &nbsp;·&nbsp; React &nbsp;·&nbsp; Angular</p>
 </div>
 
+<div class="container-fluid mt-4">
+  <div class="about-block">
+    <p class="lead">I am an enthusiastic Computer Science professional with over eight years in software development and over five years of project management experience.</p>
+    <p class="lead mb-0">Currently working as a Senior Software Engineer, utilizing Node.js with TypeScript and GraphQL in a serverless AWS environment.</p>
+  </div>
 
+  <div class="row g-3 mt-4">
+    <div class="col-lg-4 col-md-12">
+      <div class="contact-card d-flex align-items-center gap-3">
+        <div class="contact-icon">
+          <fa-icon [icon]="faMail"></fa-icon>
+        </div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">r.tobo&#64;me.com</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="contact-card d-flex align-items-center gap-3">
+        <div class="contact-icon">
+          <fa-icon [icon]="faMap"></fa-icon>
+        </div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Denver, CO, USA</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12">
+      <div class="contact-card d-flex align-items-center gap-3">
+        <div class="contact-icon">
+          <fa-icon [icon]="faWork"></fa-icon>
+        </div>
+        <div>
+          <div class="contact-label">Freelance</div>
+          <div class="contact-value">Currently Unavailable</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

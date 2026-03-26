@@ -11,3 +11,10 @@ export class Skill {
   category: string;
   skills: string[];
 }
+
+export class Education {
+  degree: string;
+  institution: string;
+  year: string;
+  location: string;
+}

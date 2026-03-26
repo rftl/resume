@@ -1,42 +1,105 @@
-html {
-  height: 101%;
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0.4rem;
+    top: 1.4rem;   /* starts at center of first (current) dot */
+    bottom: 1rem;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent) 0%, var(--accent-light) 100%);
+  }
 }
 
-.emp-date {
-  margin-top: 2px;
-  margin-bottom: 0;
+.timeline-entry {
+  position: relative;
+  margin-bottom: 1.25rem;
+
+  .timeline-dot {
+    position: absolute;
+    left: calc(-2rem + 0.4rem + 1px - 6.5px); /* center on the line */
+    top: 1rem;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid white;
+    box-shadow: 0 0 0 3px var(--accent-light);
+  }
+
+  .timeline-card {
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+    gap: 1rem;
+  }
+
+  .company-name {
+    font-size: 0.975rem;
+    font-weight: 600;
+  }
+
+  .job-title {
+    font-size: 0.85rem;
+  }
+
+  .date-badge {
+    font-size: 0.72rem;
+    color: var(--accent);
+    background: var(--accent-light);
+    border: 1px solid var(--accent-border);
+    padding: 0.2rem 0.65rem;
+    border-radius: 12px;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+
+  .toggle-icon {
+    color: var(--accent);
+    font-size: 0.85rem;
+  }
 }
 
-.emp-co-group{
-  margin-bottom: 15px;
-  max-width: 99%;
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 0.75rem;
 }
 
-.emp-co-title {
-  margin-bottom: -9px;
-  cursor: pointer;
-}
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.25rem 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
 
-.emp-task-group .list-group-item{
-  border-width: 0 0 0;
-}
-
-.emp-task {
-  text-indent: -1.2em;
-  margin-left: 1.1em;
-  margin-bottom: 0;
-}
-
-.bullet  {
-  font-size: 9px;
-  margin-right: 4px;
+  .bullet-icon {
+    font-size: 0.45rem;
+    margin-top: 0.45rem;
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 768px) {
-  h5 {
-    font-size: 1rem;
+  .timeline-meta {
+    flex-direction: column;
+    align-items: flex-end !important;
   }
-  p {
-    font-size: .9rem;
+
+  .company-name {
+    font-size: 0.9rem !important;
   }
 }

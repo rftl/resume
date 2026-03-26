@@ -1,16 +1,14 @@
-<h3 class="display-4">Skills</h3>
+<h3>Skills</h3>
 
 <div class="container-fluid">
-  <div class="row">
-    @for (skillGroup of skillSet; track skillGroup.category) {
-      <div class="col-lg-3 col-md-2">
-        <h5>{{skillGroup.category}}</h5>
-        <ul class="list-group list-group-flush">
-          @for (skill of skillGroup.skills; track $index) {
-            <li class="list-group-item">{{skill}}</li>
-          }
-        </ul>
+  @for (skillGroup of skillSet; track skillGroup.category) {
+    <div class="skill-group mb-4">
+      <h6 class="skill-category-label">{{skillGroup.category}}</h6>
+      <div class="skill-pills">
+        @for (skill of skillGroup.skills; track $index) {
+          <span class="skill-pill">{{skill}}</span>
+        }
       </div>
-    }
-  </div>
+    </div>
+  }
 </div>
