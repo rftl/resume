@@ -16,7 +16,8 @@
       "HTML/CSS",
       "Material UI",
       "Next.js",
-      "React"
+      "React",
+      "Tailwind CSS"
     ]
   },
   {
@@ -43,9 +44,25 @@
   {
     "category": "Data",
     "skills": [
+      "ClickHouse",
       "Kafka",
+      "Redis",
       "Slick",
       "SQL/NoSQL"
+    ]
+  },
+  {
+    "category": "AI",
+    "skills": [
+      "Agent & Skill Development",
+      "Agentic Workflows",
+      "Claude Code",
+      "Cursor",
+      "GitHub Copilot",
+      "LLM Integration",
+      "Prompt Engineering",
+      "RAG",
+      "pgvector"
     ]
   },
   {

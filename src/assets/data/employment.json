@@ -1,9 +1,25 @@
 [
   {
+    "code": "cyp",
+    "company": "Cypress.io",
+    "start": "Apr 2026",
+    "end": "Present",
+    "title": "Senior Fullstack Engineer",
+    "tasks": [
+      "Build and scale full-stack features for Cypress Cloud, delivering user-facing web applications and backend services used by thousands of organizations and developers, with end-to-end ownership from ideation through release, operations, and enhancements.",
+      "Develop highly performant web applications using React, TypeScript, and Node.js, delivering both front-end interfaces and back-end services across the product suite.",
+      "Design and implement REST and GraphQL APIs backed by PostgreSQL, with ClickHouse (OLAP) for analytics and Redis for queueing and caching.",
+      "Optimize performance and scale customer-facing applications to handle ever-increasing load across a fast-growing ecosystem; deploy on AWS (ECS) with Honeycomb observability.",
+      "Practice test-driven development and continuous delivery; peer-review code and uphold high standards on production systems, including on-call ownership.",
+      "Collaborate closely with Design, Product, Data, and Growth teams throughout the product lifecycle.",
+      "Accelerate development with AI-assisted tooling, and author reusable AI skills and agents that enhance team performance and codify engineering best practices."
+    ]
+  },
+  {
     "code": "alg",
     "company": "Allegion",
     "start": "Jun 2023",
-    "end": "Present",
+    "end": "Mar 2026",
     "title": "Senior Software Engineer",
     "tasks": [
       "Design, develop, and maintain software solutions for new and existing products.",
