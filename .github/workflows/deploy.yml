@@ -51,3 +51,7 @@ jobs:
           aws cloudfront create-invalidation \
             --distribution-id E1TDT1W6RV2Z6F \
             --paths "/index.html"
+
+          aws cloudfront create-invalidation \
+            --distribution-id EWU0G4VUWM9Y1 \
+            --paths "/index.html"
