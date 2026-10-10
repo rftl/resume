@@ -20,30 +20,30 @@ describe('ThemeService', () => {
   describe('initial state', () => {
     it('should default to dark when localStorage has no value', () => {
       setup();
-      expect(service.isDark()).toBeTrue();
+      expect(service.isDark()).toBe(true);
     });
 
     it('should be dark when localStorage has "true"', () => {
       localStorage.setItem('dark-theme', 'true');
       setup();
-      expect(service.isDark()).toBeTrue();
+      expect(service.isDark()).toBe(true);
     });
 
     it('should be light when localStorage has "false"', () => {
       localStorage.setItem('dark-theme', 'false');
       setup();
-      expect(service.isDark()).toBeFalse();
+      expect(service.isDark()).toBe(false);
     });
 
     it('should apply dark-theme class to body when starting dark', () => {
       setup();
-      expect(document.body.classList.contains('dark-theme')).toBeTrue();
+      expect(document.body.classList.contains('dark-theme')).toBe(true);
     });
 
     it('should not apply dark-theme class to body when starting light', () => {
       localStorage.setItem('dark-theme', 'false');
       setup();
-      expect(document.body.classList.contains('dark-theme')).toBeFalse();
+      expect(document.body.classList.contains('dark-theme')).toBe(false);
     });
   });
 
@@ -52,24 +52,24 @@ describe('ThemeService', () => {
 
     it('should switch from dark to light', () => {
       service.toggle();
-      expect(service.isDark()).toBeFalse();
+      expect(service.isDark()).toBe(false);
     });
 
     it('should switch from light back to dark', () => {
       service.toggle();
       service.toggle();
-      expect(service.isDark()).toBeTrue();
+      expect(service.isDark()).toBe(true);
     });
 
     it('should remove dark-theme class from body when switching to light', () => {
       service.toggle();
-      expect(document.body.classList.contains('dark-theme')).toBeFalse();
+      expect(document.body.classList.contains('dark-theme')).toBe(false);
     });
 
     it('should add dark-theme class to body when switching back to dark', () => {
       service.toggle();
       service.toggle();
-      expect(document.body.classList.contains('dark-theme')).toBeTrue();
+      expect(document.body.classList.contains('dark-theme')).toBe(true);
     });
 
     it('should persist light preference to localStorage', () => {

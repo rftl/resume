@@ -28,7 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
-              "src/favicon.png",
+              { "glob": "*", "input": "src/icons", "output": "/" },
               { "glob": "**/*", "input": "node_modules/ng2-pdfjs-viewer/pdfjs", "output": "/assets/pdfjs" }
             ],
             "styles": [
@@ -90,24 +90,9 @@
           }
         },
         "test": {
-          "builder": "@angular/build:karma",
+          "builder": "@angular/build:unit-test",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/assets",
-              "src/favicon.png"
-            ],
-            "styles": [
-              "bootstrap/dist/css/bootstrap.min.css",
-              "bootstrap-icons/font/bootstrap-icons.css",
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "bootstrap/dist/js/bootstrap.min.js"
-            ]
+            "tsConfig": "tsconfig.spec.json"
           }
         }
       }

@@ -19,8 +19,8 @@ describe('SkillsComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should load all 7 skill categories', () => {
-    expect(component.skillSet.length).toBe(7);
+  it('should load all 8 skill categories', () => {
+    expect(component.skillSet.length).toBe(8);
   });
 
   it('should contain all expected categories', () => {
@@ -30,6 +30,7 @@ describe('SkillsComponent', () => {
     expect(categories).toContain('Backend');
     expect(categories).toContain('Cloud & Infrastructure');
     expect(categories).toContain('Data');
+    expect(categories).toContain('AI');
     expect(categories).toContain('Security & Identity');
     expect(categories).toContain('Tools & Other');
   });

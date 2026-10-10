@@ -28,7 +28,7 @@ describe('AppComponent', () => {
 
   it('should start with menu active', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    expect(fixture.componentInstance.menuActive).toBeTrue();
+    expect(fixture.componentInstance.menuActive).toBe(true);
   });
 
   it('should return left caret icon when menu is active', () => {

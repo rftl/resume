@@ -26,26 +26,26 @@ describe('EmploymentComponent', () => {
 
   it('should expand the first item by default', () => {
     const firstCode = component.employmentData[0].code;
-    expect(component.isExpanded(firstCode)).toBeTrue();
+    expect(component.isExpanded(firstCode)).toBe(true);
   });
 
   it('should not expand subsequent items by default', () => {
     if (component.employmentData.length > 1) {
       const secondCode = component.employmentData[1].code;
-      expect(component.isExpanded(secondCode)).toBeFalse();
+      expect(component.isExpanded(secondCode)).toBe(false);
     }
   });
 
   it('should expand a collapsed item when toggled', () => {
     const code = component.employmentData[component.employmentData.length - 1].code;
     component.toggleContent(code);
-    expect(component.isExpanded(code)).toBeTrue();
+    expect(component.isExpanded(code)).toBe(true);
   });
 
   it('should collapse an expanded item when toggled', () => {
     const firstCode = component.employmentData[0].code;
     component.toggleContent(firstCode);
-    expect(component.isExpanded(firstCode)).toBeFalse();
+    expect(component.isExpanded(firstCode)).toBe(false);
   });
 
   it('should show down caret for expanded item', () => {

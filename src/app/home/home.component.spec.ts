@@ -35,6 +35,33 @@ describe('HomeComponent', () => {
     });
   });
 
+  describe('yearsOfExperience', () => {
+    beforeEach(() => {
+      vi.useFakeTimers();
+    });
+
+    afterEach(() => {
+      vi.useRealTimers();
+    });
+
+    it('should not count the current year before the May anniversary', () => {
+      vi.setSystemTime(new Date(2026, 3, 30));
+      expect(component.yearsOfExperience).toBe(10);
+    });
+
+    it('should count the current year on the May anniversary', () => {
+      vi.setSystemTime(new Date(2026, 4, 1));
+      expect(component.yearsOfExperience).toBe(11);
+    });
+
+    it('should render the years in the about block', () => {
+      vi.setSystemTime(new Date(2026, 9, 10));
+      fixture.detectChanges();
+      const about = fixture.debugElement.query(By.css('.about-block')).nativeElement as HTMLElement;
+      expect(about.textContent).toContain('over 11 years');
+    });
+  });
+
   describe('template', () => {
     it('should render the hero banner', () => {
       const hero = fixture.debugElement.query(By.css('.hero-banner'));
